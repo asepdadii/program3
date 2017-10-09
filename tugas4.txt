@@ -1,0 +1,25 @@
+program Kalkulator;
+uses crt;
+var
+b,bb,op:integer;
+hasil:real;
+begin
+clrscr;
+writeln('masukan bilangan pertama=');readln(b);
+writeln('masukan bilangan kedua=');readln(bb);
+writeln('isi dengan number 1(+) 2(-) 3(/) 4(*)=');readln(op);
+hasil:=1;
+if (op=1)then
+hasil:=b+bb
+else if (op=2)then
+hasil:=b+bb
+else if (op=3)then
+hasil:=b+bb
+else if (op=4)then
+hasil:=b+bb
+begin
+hasil:=hasil*b;
+end;
+writeln('maka hasilnya',hasil:7:2);
+readln;
+end.
