@@ -1,0 +1,43 @@
+program Ramedial;
+uses crt;
+
+var
+alpro,sbo,rti,bi,pancasila:integer;
+f,g,h,i,j:string;
+begin
+clrscr;
+writeln('masukan nilai alpro=');readln(alpro);
+writeln('masukan nilai sbo=') ;readln(sbo);
+writeln('masukan nilai rti=') ;readln(rti);
+writeln('masukan nilai bahasa indonesia=')  ;readln(bi);
+writeln('masukan nilai pancasila=')  ;readln(pancasila);
+if(alpro>60) and (sbo>60)  and (rti>60) and (bi>60) and (pancasila>60) then
+begin
+writeln('lulus ramedial.')
+end
+else
+begin
+if alpro < 60 then
+begin
+f:='tidak lulus alpro'
+end;
+if sbo < 60 then
+begin
+g:=', tidak lulus sbo'
+end;
+if rti < 60 then
+begin
+h:=', tidak lulus rti'
+end;
+if bi < 60 then
+begin
+i:=', tidak lulus bahasa indonesia'
+end;
+if pancasila < 60 then
+begin
+j:=', tidak lulus pancasila'
+end;
+write('remedial:', +f+''+g+''+h+''+i+''+j);
+end;
+readln;
+end.
